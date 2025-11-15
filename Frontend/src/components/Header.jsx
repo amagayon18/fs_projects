@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Header = () => {
     <header className="w-full bg-white shadow-sm">
       <nav className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
-        <div className="text-xl font-bold text-gray-900">MYBRAND</div>
+        <div className="text-xl font-bold text-gray-900">Project</div>
 
         {/* Hamburger Icon (Mobile) */}
         <button
@@ -37,17 +37,21 @@ const Header = () => {
           } absolute top-14 left-0 w-full bg-white md:static md:flex md:space-x-8 md:w-auto md:items-center`}
         >
           <li>
-            <link
+            <Link
               to="/"
               className="block px-4 py-2 text-gray-700 hover:text-blue-700"
             >
               Home
-            </link>
+            </Link>
           </li>
           <li>
-            <link to="/products">
+            <Link
+              to="/products"
+              className="block px-4 py-2 text-gray-700
+              hover:text-blue-700"
+            >
               Products
-            </link>
+            </Link>
           </li>
           <li>
             <a

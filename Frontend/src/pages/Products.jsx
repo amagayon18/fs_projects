@@ -1,14 +1,16 @@
-import React from 'react'
-import Header from '../components/Header'
-import Product_list from '../components/Product_list'
+import React from "react";
+import ProductGuide from "../components/ProductGuide";
+import Product_list from "../components/Product_list";
+import Header from "../components/Header";
 
-const products = () => {
+export const Products = () => {
   return (
     <div>
-        <Header />
-        <Product_list />
+      <Header />
+      <ProductGuide />
+      <Product_list />
     </div>
-  )
-}
+  );
+};
 
-export default products
+export default Products;

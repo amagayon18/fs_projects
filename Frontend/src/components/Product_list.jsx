@@ -33,7 +33,7 @@ const Product_list = () => {
             </div>
 
             {/* Product Details */}
-            <div className='flex items-start'>
+            <div className='flex '>
               <div className='flex flex-col mb-4'>
                 <h2 className='text-[15px] font-semibold leading-tight text-gray-900'>
                   {product.name}
