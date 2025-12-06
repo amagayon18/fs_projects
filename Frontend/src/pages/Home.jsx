@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 const Home = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       
       <Hero />
       <ProductGuide />
